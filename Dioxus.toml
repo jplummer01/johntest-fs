@@ -16,7 +16,7 @@ asset_dir = "assets"
 
 [web.app]
 # Added this to deploy to github docs
-base_path = "johntest-fs"
+# base_path = "docs"
 
 # HTML title tag content
 title = "johntest-fs"
