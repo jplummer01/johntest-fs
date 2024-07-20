@@ -5,7 +5,7 @@ FROM rustlang/rust:nightly-alpine AS build
 
 
 # Install host build dependencies.
-#RUN apk add --no-cache clang lld musl-dev git pkgconfig perl make libressl-dev
+RUN apk add --no-cache clang lld musl-dev git pkgconfig perl make libressl-dev
 
 # Build the application.
 # Leverage a cache mount to /usr/local/cargo/registry/
@@ -26,7 +26,7 @@ FROM rustlang/rust:nightly-alpine AS build
 #    --mount=type=cache,target=/app/target/ \
 #    --mount=type=cache,target=/usr/local/cargo/git/db \
 #    --mount=type=cache,target=/usr/local/cargo/registry/ \
-#cargo install dioxus-cli
+cargo install dioxus-cli
 #
 #USER = jplummer01
 
