@@ -26,7 +26,7 @@ RUN apk add --no-cache clang lld musl-dev git pkgconfig perl make libressl-dev
 #    --mount=type=cache,target=/app/target/ \
 #    --mount=type=cache,target=/usr/local/cargo/git/db \
 #    --mount=type=cache,target=/usr/local/cargo/registry/ \
-cargo install dioxus-cli
+RUN cargo install dioxus-cli
 #
 #USER = jplummer01
 
