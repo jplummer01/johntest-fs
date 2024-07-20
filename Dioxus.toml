@@ -8,12 +8,15 @@ name = "johntest-fs"
 default_platform = "web"
 
 # `build` & `serve` dist path
-out_dir = "dist"
+#out_dir = "dist"
+out_dir = "docs"
 
 # resource (assets) file folder
 asset_dir = "assets"
 
 [web.app]
+# Added this to deploy to github docs
+base_path = "johntest-fs"
 
 # HTML title tag content
 title = "johntest-fs"
